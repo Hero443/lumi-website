@@ -1,1 +1,477 @@
-hallooo
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuminosCity Experience — Beta Launch 27.03.2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ NAVBAR ═══ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="bannerlumi.png" alt="LuminosCity Experience" class="nav-logo-img" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#regelwerk">Regelwerk</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#join">Beitreten</a></li>
+    </ul>
+    <a href="https://discord.gg/mZbZmxQd2Q" target="_blank" rel="noopener noreferrer" class="nav-cta">Discord</a>
+    <button id="menu-btn" class="menu-btn" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="#features">Features</a>
+    <a href="#regelwerk">Regelwerk</a>
+    <a href="#community">Community</a>
+    <a href="#join">Beitreten</a>
+    <a href="https://discord.gg/mZbZmxQd2Q" target="_blank" rel="noopener noreferrer" class="mobile-cta">Discord</a>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════  HERO  ═══ -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-glow-left"></div>
+    <div class="hero-glow-right"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-city">
+      <svg viewBox="0 0 1400 320" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Skyline buildings -->
+        <rect x="0"    y="180" width="70"  height="140" fill="#080012"/>
+        <rect x="12"   y="130" width="46"  height="50"  fill="#080012"/>
+        <rect x="80"   y="90"  width="90"  height="230" fill="#080012"/>
+        <rect x="180"  y="150" width="55"  height="170" fill="#080012"/>
+        <rect x="245"  y="55"  width="110" height="265" fill="#080012"/>
+        <rect x="365"  y="130" width="65"  height="190" fill="#080012"/>
+        <rect x="440"  y="38"  width="130" height="282" fill="#080012"/>
+        <rect x="580"  y="110" width="75"  height="210" fill="#080012"/>
+        <rect x="665"  y="62"  width="100" height="258" fill="#080012"/>
+        <rect x="775"  y="140" width="60"  height="180" fill="#080012"/>
+        <rect x="845"  y="48"  width="120" height="272" fill="#080012"/>
+        <rect x="975"  y="115" width="70"  height="205" fill="#080012"/>
+        <rect x="1055" y="65"  width="105" height="255" fill="#080012"/>
+        <rect x="1170" y="140" width="75"  height="180" fill="#080012"/>
+        <rect x="1255" y="88"  width="95"  height="232" fill="#080012"/>
+        <rect x="1360" y="120" width="40"  height="200" fill="#080012"/>
+        <!-- Window lights -->
+        <rect x="90"  y="100" width="7" height="5" fill="#ff4da6" opacity="0.9"/>
+        <rect x="107" y="118" width="7" height="5" fill="#9b5cff" opacity="0.7"/>
+        <rect x="90"  y="130" width="7" height="5" fill="#00e0ff" opacity="0.6"/>
+        <rect x="124" y="100" width="7" height="5" fill="#ff4da6" opacity="0.5"/>
+        <rect x="255" y="68"  width="9" height="6" fill="#ff4da6" opacity="0.9"/>
+        <rect x="278" y="85"  width="9" height="6" fill="#9b5cff" opacity="0.8"/>
+        <rect x="301" y="68"  width="9" height="6" fill="#ff4da6" opacity="0.7"/>
+        <rect x="255" y="100" width="9" height="6" fill="#00e0ff" opacity="0.8"/>
+        <rect x="324" y="82"  width="9" height="6" fill="#9b5cff" opacity="0.6"/>
+        <rect x="450" y="52"  width="11" height="8" fill="#9b5cff" opacity="0.9"/>
+        <rect x="473" y="70"  width="11" height="8" fill="#ff4da6" opacity="0.8"/>
+        <rect x="496" y="52"  width="11" height="8" fill="#00e0ff" opacity="0.7"/>
+        <rect x="450" y="95"  width="11" height="8" fill="#ff4da6" opacity="0.6"/>
+        <rect x="519" y="70"  width="11" height="8" fill="#9b5cff" opacity="0.8"/>
+        <rect x="542" y="52"  width="11" height="8" fill="#00e0ff" opacity="0.5"/>
+        <rect x="675" y="75"  width="10" height="7" fill="#ff4da6" opacity="0.9"/>
+        <rect x="697" y="92"  width="10" height="7" fill="#9b5cff" opacity="0.8"/>
+        <rect x="719" y="75"  width="10" height="7" fill="#00e0ff" opacity="0.7"/>
+        <rect x="741" y="92"  width="10" height="7" fill="#ff4da6" opacity="0.6"/>
+        <rect x="855" y="62"  width="12" height="8" fill="#9b5cff" opacity="0.9"/>
+        <rect x="879" y="80"  width="12" height="8" fill="#ff4da6" opacity="0.8"/>
+        <rect x="903" y="62"  width="12" height="8" fill="#00e0ff" opacity="0.9"/>
+        <rect x="855" y="105" width="12" height="8" fill="#ff4da6" opacity="0.7"/>
+        <rect x="927" y="80"  width="12" height="8" fill="#9b5cff" opacity="0.6"/>
+        <rect x="951" y="62"  width="12" height="8" fill="#00e0ff" opacity="0.5"/>
+        <rect x="1065" y="80"  width="11" height="7" fill="#00e0ff" opacity="0.9"/>
+        <rect x="1089" y="98"  width="11" height="7" fill="#ff4da6" opacity="0.8"/>
+        <rect x="1113" y="80"  width="11" height="7" fill="#9b5cff" opacity="0.7"/>
+        <rect x="1265" y="100" width="10" height="7" fill="#ff4da6" opacity="0.9"/>
+        <rect x="1287" y="118" width="10" height="7" fill="#9b5cff" opacity="0.7"/>
+        <rect x="1309" y="100" width="10" height="7" fill="#00e0ff" opacity="0.8"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow anim">
+      <span class="pulse-dot"></span>
+      FiveM Roleplay · Beta Launch 27.03.2026
+    </div>
+    <h1 class="hero-title anim">
+      <span class="title-line">LuminosCity</span>
+      <span class="title-line gradient-text">Experience</span>
+    </h1>
+    <p class="hero-sub anim">
+      Die Stadt erwacht. Ein neues Kapitel Roleplay beginnt — gebaut von Grund auf,
+      für echte Stories und unvergessliche Momente.
+    </p>
+
+    <!-- Countdown -->
+    <div class="countdown anim" id="countdown-wrap">
+      <div class="countdown-badge">
+        <span class="pulse-dot"></span>
+        Launch am 27.03.2026 · 19:00 Uhr
+      </div>
+      <div class="cd-stats-grid">
+        <div class="cd-stat-block" style="--c:#ff4da6">
+          <div class="stat-line"></div>
+          <div class="cd-digit" id="cd-days">05</div>
+          <div class="cd-label">Tage</div>
+          <div class="stat-line bot"></div>
+        </div>
+        <div class="cd-stat-block" style="--c:#9b5cff">
+          <div class="stat-line"></div>
+          <div class="cd-digit" id="cd-hours">00</div>
+          <div class="cd-label">Stunden</div>
+          <div class="stat-line bot"></div>
+        </div>
+        <div class="cd-stat-block" style="--c:#00e0ff">
+          <div class="stat-line"></div>
+          <div class="cd-digit" id="cd-minutes">00</div>
+          <div class="cd-label">Minuten</div>
+          <div class="stat-line bot"></div>
+        </div>
+        <div class="cd-stat-block" style="--c:#4cc9f0">
+          <div class="stat-line"></div>
+          <div class="cd-digit" id="cd-seconds">00</div>
+          <div class="cd-label">Sekunden</div>
+          <div class="stat-line bot"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="hero-stats anim">
+      <div class="hero-stat">
+        <span class="stat-val" style="color:#ff4da6">27.03.</span>
+        <span class="stat-lbl">Beta Launch</span>
+      </div>
+      <div class="hero-stat">
+        <span class="stat-val" style="color:#9b5cff">19 Uhr</span>
+        <span class="stat-lbl">Go-Live</span>
+      </div>
+      <div class="hero-stat">
+        <span class="stat-val" style="color:#00e0ff">Im Bau</span>
+        <span class="stat-lbl">Server Status</span>
+      </div>
+    </div>
+
+    <!-- CTAs -->
+    <div class="hero-ctas anim">
+      <a href="https://discord.gg/mZbZmxQd2Q" target="_blank" rel="noopener noreferrer" class="btn-primary">Ab 27.03. beitreten</a>
+      <a href="https://cfx.re/join/3eoy9y" target="_blank" rel="noopener noreferrer" class="btn-ghost">Server verbinden</a>
+    </div>
+  </div>
+</section>
+
+<div class="section-div"></div>
+
+<!-- ══════════════════════════════════════════ FEATURES ═══ -->
+<section id="features" class="section">
+  <div class="container">
+    <div class="section-header anim">
+      <div class="section-tag">Was uns auszeichnet</div>
+      <h2 class="section-title">Die Vision für <span class="gradient-text">LuminosCity</span></h2>
+      <p class="section-sub">Noch im Aufbau — aber mit einer klaren Richtung. Das hier sind die Systeme, an denen wir gerade arbeiten.</p>
+    </div>
+    <div class="features-grid">
+
+      <div class="feature-card anim" style="--cc:#ff4da6">
+        <div class="feature-label">WIRTSCHAFT</div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+        </div>
+        <h3 class="feature-title">Realistische Wirtschaft</h3>
+        <p class="feature-desc">Verdiene legal oder illegal — kaufe Immobilien, wasche Schwarzgeld und erlebe eine Wirtschaft mit echter Marktdynamik.</p>
+        <div class="feature-tag">Schwarzgeld · Immobilien · Markt</div>
+      </div>
+
+      <div class="feature-card anim" style="--cc:#9b5cff">
+        <div class="feature-label">KARRIERE</div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+        </div>
+        <h3 class="feature-title">Jobs & Fraktionen</h3>
+        <p class="feature-desc">Farm Jobs, verdiene Geld und bau dir deinen Ruf auf. Wer lange genug dabei ist, kann eigene Fraktionen gründen — legal oder kriminell.</p>
+        <div class="feature-tag">Farming · Progression · Fraktionen</div>
+      </div>
+
+      <div class="feature-card anim" style="--cc:#00e0ff">
+        <div class="feature-label">INTERFACE</div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        </div>
+        <h3 class="feature-title">Eigene UI-Systeme</h3>
+        <p class="feature-desc">Maßgeschneiderte NUI-Interfaces für maximale Immersion. Eigene MDTs und UI-Systeme, HUD — alles aus einem Guss, jedes Pixel durchdacht.</p>
+        <div class="feature-tag">NUI · MDT · Custom HUD</div>
+      </div>
+
+      <div class="feature-card anim" style="--cc:#ff4da6">
+        <div class="feature-label">ROLEPLAY</div>
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3 class="feature-title">Immersives Roleplay</h3>
+        <p class="feature-desc">LuminosCity wird als echte RP-Welt aufgebaut — mit Lore, Stadtgeschichte und Charaktertiefe, die von Tag 1 an wächst.</p>
+        <div class="feature-tag">Lore · Storyworld · Community</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-div"></div>
+
+<!-- ══════════════════════════════════════════ REGELWERK ═══ -->
+<section id="regelwerk" class="section">
+  <div class="container">
+    <div class="section-header anim">
+      <div class="section-tag">Faire Welt · Klare Regeln</div>
+      <h2 class="section-title">Das <span class="gradient-text">Regelwerk</span></h2>
+      <p class="section-sub">LuminosCity lebt von Quality-Roleplay. Diese Grundregeln sorgen dafür, dass jeder Spieler ein faires und immersives Erlebnis hat.</p>
+    </div>
+
+    <div class="rules-grid">
+
+      <!-- §1 Roleplay -->
+      <div class="rule-card anim" style="--cc:#ff4da6">
+        <div class="rule-card-header">
+          <div class="rule-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span class="rule-cat">Roleplay</span>
+          <span class="rule-para">§1</span>
+        </div>
+        <ul class="rule-list">
+          <li><span class="rule-num">1</span><div><strong>Charakter bleibt Charakter</strong><p>Kein Metagaming — kein Wissen aus OOC-Quellen, Streams oder Dritten darf ins Spiel einfließen.</p></div></li>
+          <li><span class="rule-num">2</span><div><strong>Kein RDM / VDM</strong><p>Angriffe auf Spieler oder Fahrzeugrammen ohne glaubwürdigen RP-Grund sind strikt verboten.</p></div></li>
+          <li><span class="rule-num">3</span><div><strong>Kein Powergaming</strong><p>Handlungen, die kein anderer Spieler realistisch verhindern oder nachvollziehen kann, sind untersagt.</p></div></li>
+          <li><span class="rule-num">4</span><div><strong>New Life Rule</strong><p>Nach dem Tod erinnerst du dich nicht an die Ereignisse, die dazu geführt haben — dein Charakter beginnt neu.</p></div></li>
+        </ul>
+      </div>
+
+      <!-- §2 Community -->
+      <div class="rule-card anim" style="--cc:#9b5cff">
+        <div class="rule-card-header">
+          <div class="rule-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <span class="rule-cat">Community</span>
+          <span class="rule-para">§2</span>
+        </div>
+        <ul class="rule-list">
+          <li><span class="rule-num">1</span><div><strong>Respekt & Fairness</strong><p>Diskriminierung, Beleidigungen oder Toxizität werden sofort geahndet.</p></div></li>
+          <li><span class="rule-num">2</span><div><strong>Kein Cheating</strong><p>Modifikationen oder Exploits, die einen Vorteil geben = permanenter Bann.</p></div></li>
+          <li><span class="rule-num">3</span><div><strong>Admin-Entscheidungen</strong><p>Einsprüche ausschließlich über das Ticket-System auf Discord.</p></div></li>
+          <li><span class="rule-num">4</span><div><strong>Werbung verboten</strong><p>Werbung für andere Server im Chat, in-game oder auf Discord ist verboten.</p></div></li>
+        </ul>
+      </div>
+
+      <!-- §3 Server -->
+      <div class="rule-card anim" style="--cc:#00e0ff">
+        <div class="rule-card-header">
+          <div class="rule-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <span class="rule-cat">Server</span>
+          <span class="rule-para">§3</span>
+        </div>
+        <ul class="rule-list">
+          <li><span class="rule-num">1</span><div><strong>Bugs melden, nicht nutzen</strong><p>Gefundene Bugs sofort per Ticket melden. Missbrauch riskiert deinen Account.</p></div></li>
+          <li><span class="rule-num">2</span><div><strong>Deutsche Sprache</strong><p>LuminosCity ist deutschsprachig — Deutsch ist Pflichtsprache in-game.</p></div></li>
+          <li><span class="rule-num">3</span><div><strong>Kein Server-Hopping</strong><p>Ressourcen von anderen Servern dürfen nicht eingebracht werden.</p></div></li>
+          <li><span class="rule-num">4</span><div><strong>Mikrofon-Pflicht</strong><p>Ein Mikrofon ist Voraussetzung — LuminosCity setzt auf Voice-Roleplay.</p></div></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="rules-cta anim">
+      <p>Dies ist ein Auszug. Das vollständige Regelwerk gibt es auf unserem Discord.</p>
+      <a href="https://discord.gg/mZbZmxQd2Q" target="_blank" rel="noopener noreferrer" class="btn-outline">
+        <svg viewBox="0 0 127.14 96.36" fill="#ff4da6" width="14" height="14" aria-hidden="true"><path d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15z"/></svg>
+        Vollständiges Regelwerk auf Discord
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="section-div"></div>
+
+<!-- ══════════════════════════════════════════ COMMUNITY ═══ -->
+<section id="community" class="section">
+  <div class="container">
+    <div class="section-header anim">
+      <div class="section-tag">Die Community</div>
+      <h2 class="section-title">Bereit für den <span class="gradient-text-cool">Launch</span></h2>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-grid anim">
+      <div class="stat-block" style="--c:#ff4da6">
+        <div class="stat-line"></div>
+        <div class="stat-num">27.03.26</div>
+        <div class="stat-label">Beta Launch</div>
+        <div class="stat-line bot"></div>
+      </div>
+      <div class="stat-block" style="--c:#9b5cff">
+        <div class="stat-line"></div>
+        <div class="stat-num">19:00 Uhr</div>
+        <div class="stat-label">Server geht online</div>
+        <div class="stat-line bot"></div>
+      </div>
+      <div class="stat-block" style="--c:#00e0ff">
+        <div class="stat-line"></div>
+        <div class="stat-num">Im Bau</div>
+        <div class="stat-label">Alles entsteht gerade</div>
+        <div class="stat-line bot"></div>
+      </div>
+      <div class="stat-block" style="--c:#4cc9f0">
+        <div class="stat-line"></div>
+        <div class="stat-num">Gründer</div>
+        <div class="stat-label">Sei von Anfang dabei</div>
+        <div class="stat-line bot"></div>
+      </div>
+    </div>
+
+    <!-- Discord CTA -->
+    <div class="discord-cta anim">
+      <div class="discord-inner">
+        <svg width="28" height="22" viewBox="0 0 127.14 96.36" fill="#5865F2" aria-hidden="true"><path d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15z"/></svg>
+        <div>
+          <div class="discord-name">Discord Community</div>
+          <div class="discord-sub">Wächst täglich · Launch 27.03. · Beta-Anfragen willkommen</div>
+        </div>
+        <a href="https://discord.gg/mZbZmxQd2Q" target="_blank" rel="noopener noreferrer" class="discord-btn">Vorregistrieren</a>
+      </div>
+    </div>
+
+    <!-- Team quotes -->
+    <div class="team-grid">
+      <div class="team-card anim" style="--c:#ff4da6">
+        <div class="team-quote">"</div>
+        <p>LuminosCity wird von Grund auf mit eigenem Code entwickelt. Jedes System — UI, Wirtschaft, Jobs — entsteht neu und wird am 27.03. zum ersten Mal live gehen.</p>
+        <div class="team-meta">
+          <div class="team-avatar">D</div>
+          <div>
+            <div class="team-name">Dev Team</div>
+            <div class="team-role">Gründer & Entwickler</div>
+          </div>
+        </div>
+      </div>
+      <div class="team-card anim" style="--c:#9b5cff">
+        <div class="team-quote">"</div>
+        <p>Wir planen ein realistisches Wirtschaftssystem, tiefgründige Fraktionen und eine immersive Welt. Alles ist in aktiver Entwicklung — die Vision steht.</p>
+        <div class="team-meta">
+          <div class="team-avatar">L</div>
+          <div>
+            <div class="team-name">Lead Designer</div>
+            <div class="team-role">UI/UX & Game Design</div>
+          </div>
+        </div>
+      </div>
+      <div class="team-card anim" style="--c:#00e0ff">
+        <div class="team-quote">"</div>
+        <p>Am 27. März öffnen wir die Beta. Wer jetzt auf Discord ist, ist Gründungsmitglied — dein Feedback prägt LuminosCity von Anfang an.</p>
+        <div class="team-meta">
+          <div class="team-avatar">C</div>
+          <div>
+            <div class="team-name">Community Lead</div>
+            <div class="team-role">Beta & Community</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-div"></div>
+
+<!-- ══════════════════════════════════════════ JOIN STEPS ═══ -->
+<section id="join" class="section">
+  <div class="container">
+    <div class="section-header anim">
+      <div class="section-tag">In 3 Schritten dabei</div>
+      <h2 class="section-title">Dein neues Leben <span class="gradient-text">beginnt am 27.03.</span></h2>
+      <p class="section-sub">Verbinde dich am <strong style="color:rgba(255,77,166,0.85)">27. März 2026 um 19:00 Uhr</strong> und sei einer der ersten Spieler auf LuminosCity. Dauert unter 5 Minuten.</p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card anim" style="--c:#ff4da6">
+        <div class="step-num">01</div>
+        <h3>Discord beitreten</h3>
+        <p>Trete unserem Discord-Server bei und registriere dich als Beta-Spieler. Erhalte Updates direkt zum Launch.</p>
+        <div class="step-badge">Jetzt möglich</div>
+      </div>
+      <div class="step-connector" aria-hidden="true"></div>
+      <div class="step-card anim" style="--c:#9b5cff">
+        <div class="step-num">02</div>
+        <h3>FiveM installieren</h3>
+        <p>Installiere FiveM und verbinde dich direkt mit LuminosCity — bereit für den Start am 27.03.</p>
+        <a href="https://cfx.re/join/3eoy9y" target="_blank" rel="noopener noreferrer" class="step-badge" style="cursor:pointer;text-decoration:none;">cfx.re/join/3eoy9y</a>
+      </div>
+      <div class="step-connector" aria-hidden="true"></div>
+      <div class="step-card anim" style="--c:#00e0ff">
+        <div class="step-num">03</div>
+        <h3>Charakter erstellen</h3>
+        <p>Am Launch-Tag deinen Charakter erstellen und LuminosCity erkunden. Die Stadt öffnet am 27.03.</p>
+        <div class="step-badge">Ab 27.03.2026</div>
+      </div>
+    </div>
+
+    <div class="join-cta anim">
+      <a href="https://discord.gg/mZbZmxQd2Q" target="_blank" rel="noopener noreferrer" class="btn-primary btn-lg">Launch: 27.03. — Jetzt auf Discord</a>
+      <p class="join-hint">Kostenlos · Kein Whitelist · Launch am 27. März 2026</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════ FOOTER ═══ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">
+          <span class="logo-badge">LC</span>
+          <span class="logo-text">LuminosCity</span>
+        </a>
+        <p class="footer-desc">Ein neues FiveM Roleplay-Erlebnis. Gebaut für echte Stories, tiefe Charaktere und unvergessliche Momente.</p>
+        <div class="footer-status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Launch: 27. März 2026 · 19:00 Uhr</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <div class="footer-col-title">Navigation</div>
+          <a href="#features">Features</a>
+          <a href="#regelwerk">Regelwerk</a>
+          <a href="#community">Community</a>
+          <a href="#join">Beitreten</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Links</div>
+          <a href="https://discord.gg/mZbZmxQd2Q" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a href="https://cfx.re/join/3eoy9y" target="_blank" rel="noopener noreferrer">Server beitreten</a>
+          <a href="#regelwerk">Regelwerk</a>
+          <a href="https://discord.gg/mZbZmxQd2Q" target="_blank" rel="noopener noreferrer">Beta-Anmeldung</a>
+          <a href="https://discord.gg/mZbZmxQd2Q" target="_blank" rel="noopener noreferrer">Support</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 |xBerry| LuminosCity Experience. Alle Rechte vorbehalten.</span>
+      <span>Nicht affiliiert mit Rockstar Games oder Take-Two Interactive.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
