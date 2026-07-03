@@ -2,6 +2,7 @@
 
 ## 2026-07-03
 
+- Dekorative Hero-Signal-Liste entfernt.
 - Umfangreiche CSS-Animationen fuer Hero, Kartenlinien, Buttons, Cards, Stats, Live-Badge, Navigation und Footer ergaenzt.
 - Reduced-Motion-Fallback fuer Animationen hinzugefuegt.
 - Altes quadratisches Icon im Footer und als Touch-Icon wiederhergestellt.
