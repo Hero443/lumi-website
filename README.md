@@ -19,6 +19,10 @@ Die Domain wird ueber `CNAME` gesetzt. Fuer GitHub Pages oder einen anderen Stat
 
 Die Website nutzt CSS-Animationen fuer Hero-Hintergrund, Kartenlinien, Buttons, Cards, Statistiken und Logo-Elemente. Fuer Nutzer mit reduzierter Bewegungs-Praeferenz greift `prefers-reduced-motion`.
 
+## Slideshow
+
+Die Startseite enthaelt unter `#einblicke` eine Slideshow fuer Server-Eindruecke. Bilder, Titel und Beschreibungen werden direkt in `index.html` gepflegt; die Steuerung liegt in `script.js`, das Styling in `style.css`.
+
 ## Rechtliche Asset-Hinweise
 
 Die aktive Website nutzt wieder das vorhandene Logo in Navbar und Favicon. Hero und Community-CTA bleiben ohne alte PNG-Keyvisuals. Die folgenden Dateien liegen weiterhin im Repository:

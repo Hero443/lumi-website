@@ -2,6 +2,8 @@
 
 ## 2026-07-03
 
+- Slideshow-Sektion fuer Server-Einblicke mit Navigation, Dots, Autoplay und responsivem Layout ergaenzt.
+- Launch-Badge aus dem Footer entfernt.
 - Dekorative Hero-Signal-Liste entfernt.
 - Umfangreiche CSS-Animationen fuer Hero, Kartenlinien, Buttons, Cards, Stats, Live-Badge, Navigation und Footer ergaenzt.
 - Reduced-Motion-Fallback fuer Animationen hinzugefuegt.

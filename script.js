@@ -74,6 +74,79 @@ if (menuBtn && mobileMenu) {
   });
 }
 
+/* ── Server-Einblicke Slideshow ───────────────────────── */
+const showcase = document.querySelector('.showcase');
+
+if (showcase) {
+  const slides = Array.from(showcase.querySelectorAll('.showcase-slide'));
+  const dots = Array.from(showcase.querySelectorAll('.showcase-dot'));
+  const prevBtn = showcase.querySelector('[data-showcase-prev]');
+  const nextBtn = showcase.querySelector('[data-showcase-next]');
+  let activeSlide = 0;
+  let autoplayId = null;
+
+  function setSlide(index) {
+    if (!slides.length) return;
+    activeSlide = (index + slides.length) % slides.length;
+
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === activeSlide);
+    });
+
+    dots.forEach((dot, i) => {
+      const active = i === activeSlide;
+      dot.classList.toggle('active', active);
+      dot.setAttribute('aria-selected', String(active));
+    });
+  }
+
+  function nextSlide() {
+    setSlide(activeSlide + 1);
+  }
+
+  function prevSlide() {
+    setSlide(activeSlide - 1);
+  }
+
+  function startAutoplay() {
+    stopAutoplay();
+    autoplayId = setInterval(nextSlide, 6500);
+  }
+
+  function stopAutoplay() {
+    if (autoplayId) clearInterval(autoplayId);
+  }
+
+  prevBtn?.addEventListener('click', () => {
+    prevSlide();
+    startAutoplay();
+  });
+
+  nextBtn?.addEventListener('click', () => {
+    nextSlide();
+    startAutoplay();
+  });
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      setSlide(i);
+      startAutoplay();
+    });
+  });
+
+  showcase.addEventListener('mouseenter', stopAutoplay);
+  showcase.addEventListener('mouseleave', startAutoplay);
+  showcase.addEventListener('focusin', stopAutoplay);
+  showcase.addEventListener('focusout', startAutoplay);
+  showcase.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft') prevSlide();
+    if (event.key === 'ArrowRight') nextSlide();
+  });
+
+  setSlide(0);
+  startAutoplay();
+}
+
 /* ── Scroll Animations ────────────────────────────────── */
 const animObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {

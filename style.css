@@ -651,6 +651,141 @@ strong { font-family: var(--f-body); }
   flex-wrap: wrap;
 }
 
+/* ═══════════════════════════════════════ EINBLICKE ═══ */
+.showcase {
+  max-width: 1060px;
+  margin: 0 auto;
+  position: relative;
+}
+.showcase-stage {
+  position: relative;
+  min-height: 540px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.018);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.28), 0 0 42px rgba(0,224,255,0.06);
+}
+.showcase-stage::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(255,77,166,0.14), transparent 24%, transparent 76%, rgba(0,224,255,0.12)),
+    linear-gradient(to top, rgba(3,0,8,0.82), transparent 52%);
+}
+.showcase-stage::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 0%, rgba(255,255,255,0.08) 46%, transparent 58%);
+  transform: translateX(-120%);
+  animation: mapSweep 8s ease-in-out infinite;
+}
+.showcase-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity 0.55s ease, transform 0.65s ease;
+}
+.showcase-slide.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
+.showcase-slide img {
+  width: 100%;
+  height: 100%;
+  min-height: 540px;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.08) contrast(1.05);
+}
+.showcase-slide.active img {
+  animation: slideKenBurns 8s ease-in-out infinite alternate;
+}
+.showcase-slide figcaption {
+  position: absolute;
+  left: 34px;
+  right: 34px;
+  bottom: 30px;
+  z-index: 5;
+  max-width: 560px;
+}
+.showcase-kicker {
+  display: inline-flex;
+  margin-bottom: 10px;
+  font-family: var(--f-title);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(0,224,255,0.76);
+}
+.showcase-slide strong {
+  display: block;
+  font-family: var(--f-title);
+  font-size: clamp(1.35rem, 3vw, 2.3rem);
+  line-height: 1.15;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.showcase-slide p {
+  max-width: 480px;
+  font-size: 0.86rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.75;
+}
+.showcase-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 22px;
+}
+.showcase-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.035);
+  color: rgba(255,255,255,0.74);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.showcase-btn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0,224,255,0.36);
+  color: #fff;
+  box-shadow: 0 0 18px rgba(0,224,255,0.12);
+}
+.showcase-dots {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.showcase-dot {
+  width: 34px;
+  height: 4px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.16);
+  cursor: pointer;
+  transition: width 0.25s, background 0.25s, box-shadow 0.25s;
+}
+.showcase-dot.active {
+  width: 52px;
+  background: linear-gradient(90deg, var(--pink), var(--cyan));
+  box-shadow: 0 0 18px rgba(255,77,166,0.28);
+}
+
 /* ════════════════════════════════════════ FEATURES ═══ */
 .features-grid {
   display: grid;
@@ -1096,6 +1231,13 @@ strong { font-family: var(--f-body); }
 /* ═══════════════════════ SECTION ATMOSPHERIC GLOWS ═══ */
 /* placed just before footer so they target sections by ID */
 
+#einblicke {
+  background:
+    radial-gradient(ellipse 70% 58% at 78% 42%, rgba(0,224,255,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 52% at 18% 50%, rgba(255,77,166,0.055) 0%, transparent 58%),
+    #030008;
+}
+
 #features {
   background:
     radial-gradient(ellipse 70% 60% at 10% 50%,  rgba(255,77,166,0.055) 0%, transparent 60%),
@@ -1171,25 +1313,6 @@ strong { font-family: var(--f-body); }
   color: rgba(255,255,255,0.3);
   line-height: 1.72;
   margin-bottom: 18px;
-}
-.footer-status {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.7rem;
-  color: rgba(255,77,166,0.65);
-  padding: 6px 14px;
-  border-radius: 999px;
-  background: rgba(255,77,166,0.06);
-  border: 1px solid rgba(255,77,166,0.18);
-}
-.status-dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: var(--pink);
-  box-shadow: 0 0 8px var(--pink);
-  animation: pulse 1.5s ease-in-out infinite;
-  flex-shrink: 0;
 }
 .footer-links { display: flex; gap: 48px; }
 .footer-col {
@@ -1330,6 +1453,10 @@ strong { font-family: var(--f-body); }
   0%, 100% { opacity: 0.35; transform: scaleX(0.8); }
   50% { opacity: 1; transform: scaleX(1.15); }
 }
+@keyframes slideKenBurns {
+  from { transform: scale(1); }
+  to { transform: scale(1.045); }
+}
 
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -1378,6 +1505,17 @@ strong { font-family: var(--f-body); }
   .rules-grid    { grid-template-columns: 1fr; }
   .team-grid     { grid-template-columns: 1fr; }
   .stats-grid    { grid-template-columns: repeat(2, 1fr); padding: 24px 16px; }
+  .showcase-stage { min-height: 430px; border-radius: 10px; }
+  .showcase-slide img { min-height: 430px; }
+  .showcase-slide figcaption {
+    left: 20px;
+    right: 20px;
+    bottom: 22px;
+  }
+  .showcase-slide p { font-size: 0.78rem; }
+  .showcase-controls { gap: 12px; }
+  .showcase-dot { width: 26px; }
+  .showcase-dot.active { width: 42px; }
 
   .steps-grid { grid-template-columns: 1fr; }
   .step-connector { display: none; }
