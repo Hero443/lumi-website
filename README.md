@@ -17,16 +17,16 @@ Die Domain wird ueber `CNAME` gesetzt. Fuer GitHub Pages oder einen anderen Stat
 
 ## Rechtliche Asset-Hinweise
 
-Die aktive Website nutzt keine eingebundenen PNG-Keyvisuals mehr fuer Hero, Navbar oder Community-CTA. Die alten Bilddateien bleiben nur als Archiv im Repository, bis die Nutzungsrechte eindeutig geklaert sind:
+Die aktive Website nutzt wieder das vorhandene Logo in Navbar und Favicon. Hero und Community-CTA bleiben ohne alte PNG-Keyvisuals. Die folgenden Dateien liegen weiterhin im Repository:
 
-- `bannerlumi.png`
+- `bannerlumi.png` (aktive Navbar-Wortmarke)
 - `hintergrundlumi.png`
 - `LumiLogo.png`
 - `tx_discord_lumi_thumbnail.png`
 - `tx_discord_lumi_thumbnail500x500.png`
-- `favicon.png`
+- `favicon.png` (aktives Favicon)
 
-Neue visuelle Elemente bestehen aus eigenem HTML, CSS und `favicon.svg`.
+Neue visuelle Hero- und CTA-Elemente bestehen aus eigenem HTML/CSS.
 
 ## Externe Links
 

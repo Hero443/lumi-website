@@ -217,6 +217,13 @@ strong { font-family: var(--f-body); }
   gap: 12px;
   flex-shrink: 0;
 }
+.nav-logo-img {
+  width: auto;
+  height: 112px;
+  display: block;
+  border-radius: 6px;
+  filter: drop-shadow(0 0 10px rgba(255,77,166,0.45));
+}
 .brand-mark,
 .logo-badge {
   width: 42px;
@@ -1193,6 +1200,7 @@ strong { font-family: var(--f-body); }
   .hero-stats { gap: 24px; }
   .stat-val { font-size: 1.35rem; }
   .stat-lbl { font-size: 0.54rem; letter-spacing: 0.18em; }
+  .nav-logo-img { height: 84px; }
   .brand-name { font-size: 0.78rem; }
   .brand-sub { letter-spacing: 0.26em; }
   .footer-links { flex-direction: column; gap: 24px; }
