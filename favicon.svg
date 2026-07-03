@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="LuminosCity">
+  <rect width="64" height="64" rx="12" fill="#050711"/>
+  <path d="M16 46V18h8v20h24v8H16Z" fill="url(#g)"/>
+  <rect x="8" y="8" width="48" height="48" rx="10" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="2"/>
+  <defs>
+    <linearGradient id="g" x1="16" y1="18" x2="48" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff4da6"/>
+      <stop offset="0.55" stop-color="#9b5cff"/>
+      <stop offset="1" stop-color="#00e0ff"/>
+    </linearGradient>
+  </defs>
+</svg>

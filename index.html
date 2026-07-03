@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800;900&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,7 +16,11 @@
 <nav id="navbar">
   <div class="nav-inner">
     <a href="#" class="nav-logo">
-      <img src="bannerlumi.png" alt="LuminosCity Experience" class="nav-logo-img" />
+      <span class="brand-mark" aria-hidden="true">LC</span>
+      <span class="brand-copy">
+        <span class="brand-name">LuminosCity</span>
+        <span class="brand-sub">Experience</span>
+      </span>
     </a>
     <ul class="nav-links">
       <li><a href="#features">Features</a></li>
@@ -40,61 +45,23 @@
 <!-- ════════════════════════════════════════════  HERO  ═══ -->
 <section id="hero">
   <div class="hero-bg">
-    <div class="hero-glow-left"></div>
-    <div class="hero-glow-right"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-city">
-      <svg viewBox="0 0 1400 320" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <!-- Skyline buildings -->
-        <rect x="0"    y="180" width="70"  height="140" fill="#080012"/>
-        <rect x="12"   y="130" width="46"  height="50"  fill="#080012"/>
-        <rect x="80"   y="90"  width="90"  height="230" fill="#080012"/>
-        <rect x="180"  y="150" width="55"  height="170" fill="#080012"/>
-        <rect x="245"  y="55"  width="110" height="265" fill="#080012"/>
-        <rect x="365"  y="130" width="65"  height="190" fill="#080012"/>
-        <rect x="440"  y="38"  width="130" height="282" fill="#080012"/>
-        <rect x="580"  y="110" width="75"  height="210" fill="#080012"/>
-        <rect x="665"  y="62"  width="100" height="258" fill="#080012"/>
-        <rect x="775"  y="140" width="60"  height="180" fill="#080012"/>
-        <rect x="845"  y="48"  width="120" height="272" fill="#080012"/>
-        <rect x="975"  y="115" width="70"  height="205" fill="#080012"/>
-        <rect x="1055" y="65"  width="105" height="255" fill="#080012"/>
-        <rect x="1170" y="140" width="75"  height="180" fill="#080012"/>
-        <rect x="1255" y="88"  width="95"  height="232" fill="#080012"/>
-        <rect x="1360" y="120" width="40"  height="200" fill="#080012"/>
-        <!-- Window lights -->
-        <rect x="90"  y="100" width="7" height="5" fill="#ff4da6" opacity="0.9"/>
-        <rect x="107" y="118" width="7" height="5" fill="#9b5cff" opacity="0.7"/>
-        <rect x="90"  y="130" width="7" height="5" fill="#00e0ff" opacity="0.6"/>
-        <rect x="124" y="100" width="7" height="5" fill="#ff4da6" opacity="0.5"/>
-        <rect x="255" y="68"  width="9" height="6" fill="#ff4da6" opacity="0.9"/>
-        <rect x="278" y="85"  width="9" height="6" fill="#9b5cff" opacity="0.8"/>
-        <rect x="301" y="68"  width="9" height="6" fill="#ff4da6" opacity="0.7"/>
-        <rect x="255" y="100" width="9" height="6" fill="#00e0ff" opacity="0.8"/>
-        <rect x="324" y="82"  width="9" height="6" fill="#9b5cff" opacity="0.6"/>
-        <rect x="450" y="52"  width="11" height="8" fill="#9b5cff" opacity="0.9"/>
-        <rect x="473" y="70"  width="11" height="8" fill="#ff4da6" opacity="0.8"/>
-        <rect x="496" y="52"  width="11" height="8" fill="#00e0ff" opacity="0.7"/>
-        <rect x="450" y="95"  width="11" height="8" fill="#ff4da6" opacity="0.6"/>
-        <rect x="519" y="70"  width="11" height="8" fill="#9b5cff" opacity="0.8"/>
-        <rect x="542" y="52"  width="11" height="8" fill="#00e0ff" opacity="0.5"/>
-        <rect x="675" y="75"  width="10" height="7" fill="#ff4da6" opacity="0.9"/>
-        <rect x="697" y="92"  width="10" height="7" fill="#9b5cff" opacity="0.8"/>
-        <rect x="719" y="75"  width="10" height="7" fill="#00e0ff" opacity="0.7"/>
-        <rect x="741" y="92"  width="10" height="7" fill="#ff4da6" opacity="0.6"/>
-        <rect x="855" y="62"  width="12" height="8" fill="#9b5cff" opacity="0.9"/>
-        <rect x="879" y="80"  width="12" height="8" fill="#ff4da6" opacity="0.8"/>
-        <rect x="903" y="62"  width="12" height="8" fill="#00e0ff" opacity="0.9"/>
-        <rect x="855" y="105" width="12" height="8" fill="#ff4da6" opacity="0.7"/>
-        <rect x="927" y="80"  width="12" height="8" fill="#9b5cff" opacity="0.6"/>
-        <rect x="951" y="62"  width="12" height="8" fill="#00e0ff" opacity="0.5"/>
-        <rect x="1065" y="80"  width="11" height="7" fill="#00e0ff" opacity="0.9"/>
-        <rect x="1089" y="98"  width="11" height="7" fill="#ff4da6" opacity="0.8"/>
-        <rect x="1113" y="80"  width="11" height="7" fill="#9b5cff" opacity="0.7"/>
-        <rect x="1265" y="100" width="10" height="7" fill="#ff4da6" opacity="0.9"/>
-        <rect x="1287" y="118" width="10" height="7" fill="#9b5cff" opacity="0.7"/>
-        <rect x="1309" y="100" width="10" height="7" fill="#00e0ff" opacity="0.8"/>
-      </svg>
+    <div class="hero-map" aria-hidden="true">
+      <span class="map-road main"></span>
+      <span class="map-road cross"></span>
+      <span class="map-road diagonal"></span>
+      <span class="map-block b1"></span>
+      <span class="map-block b2"></span>
+      <span class="map-block b3"></span>
+      <span class="map-block b4"></span>
+      <span class="map-node n1"></span>
+      <span class="map-node n2"></span>
+      <span class="map-node n3"></span>
+    </div>
+    <div class="hero-signal" aria-hidden="true">
+      <span>RP</span>
+      <span>Jobs</span>
+      <span>Fraktionen</span>
+      <span>Story</span>
     </div>
   </div>
 
@@ -158,13 +125,13 @@
       </div>
       <div class="hero-stat">
         <span class="stat-val" style="color:#00e0ff">Online</span>
-        <span class="stat-lbl">Server Status
+        <span class="stat-lbl">Server Status</span>
       </div>
     </div>
 
     <!-- CTAs -->
     <div class="hero-ctas anim">
-      <a href="play.luminoscity.de" target="_blank" rel="noopener noreferrer" class="btn-primary">Jetzt spielen</a>
+      <a href="https://play.luminoscity.de" target="_blank" rel="noopener noreferrer" class="btn-primary">Jetzt spielen</a>
       <a href="https://discord.gg/mZbZmxQd2Q" target="_blank" rel="noopener noreferrer" class="btn-ghost">Discord beitreten</a>
     </div>
   </div>
@@ -342,7 +309,7 @@
     <!-- Discord CTA -->
     <div class="discord-cta anim">
       <div class="discord-inner">
-        <svg width="28" height="22" viewBox="0 0 127.14 96.36" fill="#5865F2" aria-hidden="true"><path d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15z"/></svg>
+        <span class="discord-mark" aria-hidden="true">DC</span>
         <div>
           <div class="discord-name">Discord Community</div>
           <div class="discord-sub">Beta Phase aktiv · Wächst täglich · Jetzt einsteigen</div>
@@ -413,7 +380,7 @@
         <div class="step-num">02</div>
         <h3>FiveM installieren</h3>
         <p>Installiere FiveM und verbinde dich direkt mit LuminosCity — der Server läuft bereits.</p>
-        <a href="play.luminoscity.de" target="_blank" rel="noopener noreferrer" class="step-badge" style="cursor:pointer;text-decoration:none;">cfx.re/join/3eoy9y</a>
+        <a href="https://play.luminoscity.de" target="_blank" rel="noopener noreferrer" class="step-badge" style="cursor:pointer;text-decoration:none;">cfx.re/join/3eoy9y</a>
       </div>
       <div class="step-connector" aria-hidden="true"></div>
       <div class="step-card anim" style="--c:#00e0ff">
@@ -425,7 +392,7 @@
     </div>
 
     <div class="join-cta anim">
-      <a href="play.luminoscity.de" target="_blank" rel="noopener noreferrer" class="btn-primary btn-lg">Jetzt spielen — Server betreten</a>
+      <a href="https://play.luminoscity.de" target="_blank" rel="noopener noreferrer" class="btn-primary btn-lg">Jetzt spielen — Server betreten</a>
       <p class="join-hint">Kostenlos · Kein Whitelist · Beta Phase aktiv seit 27.03.2026</p>
     </div>
   </div>
@@ -457,7 +424,7 @@
         <div class="footer-col">
           <div class="footer-col-title">Links</div>
           <a href="https://discord.gg/mZbZmxQd2Q" target="_blank" rel="noopener noreferrer">Discord</a>
-          <a href="play.luminoscity.de" target="_blank" rel="noopener noreferrer">Server beitreten</a>
+          <a href="https://play.luminoscity.de" target="_blank" rel="noopener noreferrer">Server beitreten</a>
           <a href="#regelwerk">Regelwerk</a>
           <a href="https://discord.gg/mZbZmxQd2Q" target="_blank" rel="noopener noreferrer">Beta-Anmeldung</a>
           <a href="https://discord.gg/mZbZmxQd2Q" target="_blank" rel="noopener noreferrer">Support</a>
@@ -465,8 +432,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 |xBerry| LuminosCity Experience. Alle Rechte vorbehalten.</span>
-      <span>Nicht affiliiert mit Rockstar Games oder Take-Two Interactive.</span>
+      <span>2026 LuminosCity Experience · Community-Projekt.</span>
+      <span>Eigene Webgestaltung · nicht affiliiert mit Rockstar Games, Take-Two Interactive oder Discord.</span>
     </div>
   </div>
 </footer>
