@@ -21,7 +21,7 @@ Die aktive Website nutzt wieder das vorhandene Logo in Navbar und Favicon. Hero 
 
 - `bannerlumi.png` (aktive Navbar-Wortmarke)
 - `hintergrundlumi.png`
-- `LumiLogo.png`
+- `LumiLogo.png` (aktives Footer- und Touch-Icon)
 - `tx_discord_lumi_thumbnail.png`
 - `tx_discord_lumi_thumbnail500x500.png`
 - `favicon.png` (aktives Favicon)

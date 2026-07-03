@@ -1070,6 +1070,14 @@ strong { font-family: var(--f-body); }
   gap: 10px;
   margin-bottom: 16px;
 }
+.footer-logo-img {
+  width: 36px;
+  height: 36px;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+  filter: drop-shadow(0 0 10px rgba(255,77,166,0.32));
+}
 .footer-logo .logo-badge {
   width: 36px;
   height: 36px;

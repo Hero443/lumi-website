@@ -2,6 +2,8 @@
 
 ## 2026-07-03
 
+- Altes quadratisches Icon im Footer und als Touch-Icon wiederhergestellt.
+- Entfernte Namensnennung und Kuerzel aus der sichtbaren Teamsektion.
 - Logo in Navbar und PNG-Favicon wiederhergestellt.
 - Hero und Community-CTA auf bildfreie Gestaltung umgestellt.
 - Abstrakte CSS-Kartenoptik fuer den Hero eingefuehrt.
