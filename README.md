@@ -15,6 +15,10 @@ Die Website besteht aus reinen HTML-, CSS- und JavaScript-Dateien und kann direk
 
 Die Domain wird ueber `CNAME` gesetzt. Fuer GitHub Pages oder einen anderen Static-Host muessen alle Dateien im Repository-Root ausgeliefert werden.
 
+## Animationen
+
+Die Website nutzt CSS-Animationen fuer Hero-Hintergrund, Kartenlinien, Buttons, Cards, Statistiken und Logo-Elemente. Fuer Nutzer mit reduzierter Bewegungs-Praeferenz greift `prefers-reduced-motion`.
+
 ## Rechtliche Asset-Hinweise
 
 Die aktive Website nutzt wieder das vorhandene Logo in Navbar und Favicon. Hero und Community-CTA bleiben ohne alte PNG-Keyvisuals. Die folgenden Dateien liegen weiterhin im Repository:

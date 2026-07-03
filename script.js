@@ -29,7 +29,7 @@ function updateCountdown() {
   if (diff <= 0) {
     const wrap = document.getElementById('countdown-wrap');
     if (wrap) {
-      wrap.innerHTML = '<div style="font-family:\'Orbitron\',sans-serif;font-size:1.5rem;font-weight:900;color:#ff4da6;text-shadow:0 0 24px #ff4da6;letter-spacing:0.1em;padding:20px 0">SERVER IST LIVE!</div>';
+      wrap.innerHTML = '<div class="live-banner">SERVER IST LIVE!</div>';
     }
     return;
   }

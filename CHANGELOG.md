@@ -2,6 +2,8 @@
 
 ## 2026-07-03
 
+- Umfangreiche CSS-Animationen fuer Hero, Kartenlinien, Buttons, Cards, Stats, Live-Badge, Navigation und Footer ergaenzt.
+- Reduced-Motion-Fallback fuer Animationen hinzugefuegt.
 - Altes quadratisches Icon im Footer und als Touch-Icon wiederhergestellt.
 - Entfernte Namensnennung und Kuerzel aus der sichtbaren Teamsektion.
 - Logo in Navbar und PNG-Favicon wiederhergestellt.
